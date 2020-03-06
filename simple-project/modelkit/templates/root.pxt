@@ -1,0 +1,19 @@
+<%
+insert "general.pxt"
+insert "geometry.pxt"
+insert "location.pxt"
+insert "constructions.pxt"
+
+insert 'zoneloads/office.imf', :zone_name=>'Zone A'
+insert 'zoneloads/conference.imf', :zone_name=>'Zone B'
+insert 'zoneloads/classroom.imf', :zone_name=>'Zone C'
+
+insert 'zonehvac/vav.imf', :zone_name=>'Zone A'
+insert 'zonehvac/vav.imf', :zone_name=>'Zone B'
+insert 'zonehvac/vav.imf', :zone_name=>'Zone C'
+
+insert 'system/vav.imf', :system_name=>"VAV-1", :zone_names=>['Zone A', 'Zone B', 'Zone C']
+
+insert "outputs.pxt"
+
+%>
