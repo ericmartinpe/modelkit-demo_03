@@ -1,5 +1,10 @@
+<%#INTERFACE
+parameter "name", :default=>"This Building Name"
+parameter "north_axis", :default=>30
+%>
+
 <%
-insert "general.pxt"
+insert "general.pxt", :building_name=>name, :orientation=>north_axis
 insert "geometry.pxt"
 insert "location.pxt"
 insert "constructions.pxt"
